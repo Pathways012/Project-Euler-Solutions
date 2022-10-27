@@ -3,7 +3,7 @@
 import math
 import time
 
-def CheckIfPrimeNumber(number):
+def check_if_prime_number(number):
     for i in range(2, int(math.sqrt(number))+1):
         if(number%i == 0):
             return False
@@ -17,7 +17,7 @@ primes.append(3)
 
 i = 5
 while(i < 2000000):
-    if(CheckIfPrimeNumber(i) == True):
+    if(check_if_prime_number(i) == True):
         primes.append(i)
 
     print(f"\rChecked number {i}...", end="")
